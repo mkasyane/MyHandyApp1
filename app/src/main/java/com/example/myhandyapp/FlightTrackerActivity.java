@@ -39,7 +39,6 @@ public class FlightTrackerActivity extends CommonActivity {
     protected ListAdapter adt;
     private FlightsDataSource datasource;
     private  int progress=0;
-
     private static final String AIRPORT_CODE = "AirportCode";
     private static final String API_KEY = "6922c9-61988f";
     private static final String PARAM_DEPART = "&depIata=";
@@ -58,8 +57,8 @@ public class FlightTrackerActivity extends CommonActivity {
 
     private String airportCode;
     private String serviceURL = "http://aviation-edge.com/v2/public/flights?key="+API_KEY;
-                                                         //+PARAM_DEPART+airportCode
-                                                         //+PARAM_ARRIVE+airportCode;
+    //+PARAM_DEPART+airportCode
+    //+PARAM_ARRIVE+airportCode;
 
     //used to slowdown process and show progress bar updates
     private static final int pause = 1800; //milliseconds
@@ -348,14 +347,25 @@ public class FlightTrackerActivity extends CommonActivity {
                 latLon= jObject.getJSONObject("geography").getString("latitude");
                 latLon+=", " + jObject.getJSONObject("geography").getString("longitude");
 
-                Flight flight = datasource.createFlight(
-                        jObject.getJSONObject("departure").getString("iataCode"),
-                        jObject.getJSONObject("arrival").getString("iataCode"),
-                        jObject.getJSONObject("flight").getString("iataNumber"),
-                        latLon, // location
-                        jObject.getJSONObject("speed").getString("horizontal"),
-                        jObject.getJSONObject("geography").getString("altitude"),
-                        jObject.getString("status"));
+//                Flight flight = datasource.createFlight(
+//                        jObject.getJSONObject("departure").getString("iataCode"),
+//                        jObject.getJSONObject("arrival").getString("iataCode"),
+//                        jObject.getJSONObject("flight").getString("iataNumber"),
+//                        latLon, // location
+//                        jObject.getJSONObject("speed").getString("horizontal"),
+//                        jObject.getJSONObject("geography").getString("altitude"),
+//                        jObject.getString("status"));
+
+                Flight flight = new Flight();
+                flight.setId(0);
+                flight.setAirportFrom(jObject.getJSONObject("departure").getString("iataCode"));
+                flight.setAirportTo(jObject.getJSONObject("arrival").getString("iataCode"));
+                flight.setAltitude(jObject.getJSONObject("geography").getString("altitude"));
+                flight.setFlight( jObject.getJSONObject("flight").getString("iataNumber"));
+                flight.setLocation(latLon);
+                flight.setSpeed(jObject.getJSONObject("speed").getString("horizontal"));
+                flight.setStatus(jObject.getString("status"));
+
 
                 flightList.add(flight);
                 publishProgress(progress++);
