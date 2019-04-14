@@ -1,8 +1,20 @@
 package com.example.myhandyapp;
 
 import android.os.Bundle;
+import android.widget.ListAdapter;
+import android.widget.ProgressBar;
+
+import com.example.myhandyapp.listitems.Dictionary;
+import com.example.myhandyapp.sql.DictionaryDataSource;
+
+import java.util.List;
 
 public class DictionaryActivity extends CommonActivity {
+
+    ProgressBar progressBar;
+    private List<Dictionary> DictionarytList;
+    protected ListAdapter adt;
+    private DictionaryDataSource datasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
