@@ -7,7 +7,7 @@ public class Dictionary extends ListItem {
     private String entryNumber;
     private String word;
     private String partOfSpeech;
-    private String pronounciation;
+    private String pronunciation;
     private String definitions;
 
     public Dictionary() { }
@@ -36,12 +36,12 @@ public class Dictionary extends ListItem {
         this.partOfSpeech = partOfSpeech;
     }
 
-    public String getPronounciation() {
-        return pronounciation;
+    public String getPronunciation() {
+        return pronunciation;
     }
 
-    public void setPronounciation(String pronounciation) {
-        this.pronounciation = pronounciation;
+    public void setPronunciation(String pronunciation) {
+        this.pronunciation = pronunciation;
     }
 
     public String getDefinitions() {
