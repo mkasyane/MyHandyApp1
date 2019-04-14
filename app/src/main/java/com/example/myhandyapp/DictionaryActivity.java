@@ -15,6 +15,7 @@ public class DictionaryActivity extends CommonActivity {
     private List<Dictionary> DictionarytList;
     protected ListAdapter adt;
     private DictionaryDataSource datasource;
+    private  int progress=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
