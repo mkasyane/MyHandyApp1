@@ -44,29 +44,29 @@
 
     <!-- New York Times Article Search Activity -->
     <string name="action_nyt">New York Times</string>
-    <string name="nyt_about">Data provided by \n New York Times website \n</string>
-    <string name="nyt_help">NYT  help ... \n\n change as you need</string>
+    <string name="nyt_about">Данные предоставлены \n New York Times сайтом \n</string>
+    <string name="nyt_help">NYT  помощь ... \n\n измените как вам нужно</string>
 
     <!-- News Feed -->
     <string name="action_news">News Feed</string>
-    <string name="news_about">New data provided by \n webhose.io \n</string>
+    <string name="news_about">Новые данные предоставлены \n webhose.io \n</string>
     <string name="news_help">News Feed
-    \nDeveloped by: <b>Ruth Anne Sebastian</b>
-        \n\nTo list news articles, enter a <i>title</i> and click <b>Search</b>;
-        \nScroll and select desired news article title to view the whole article.
-        \nAt the bottom of the screen, there are two buttons; <b>Save </b>or <b>Delete</b>
-        \nIf the delete button clicked and the article has not been saved, the news item will be removed
-        from the view list
-        \nSaved list will be shown whenever you come back.
-        \nTo remove the list of saved articles, click the <b>reset</b> button on the main page
+    \nРазработан:: <b>Рут Энн Себастьян</b>
+        \n\nПеречислить новостные статьи, введите <i>название</i> и нажмите <b>Поиск</b>;
+        \nПрокрутите и выберите заголовок нужной статьи, чтобы просмотреть всю статью.
+        \nВ нижней части экрана есть две кнопки; <b>Save </b>or <b>Delete</b>
+        \nЕсли кнопка удаления нажата и статья не была сохранена, новость будет удалена
+        из списка просмотра
+        \nСохраненный список будет показан, когда вы вернетесь.
+        \nЧтобы удалить список сохраненных статей, нажмите кнопку <b>сбросить</b> на главной странице.
         </string>
-    <string name="save">Save</string>
-    <string name="news_search_hint">Enter News title</string>
-    <string name="no_news_found_toast">No Data Found, Check News Title\n</string>
-    <string name="Save">Save</string>
-    <string name="data_deleted">Data is successfully deleted</string>
-    <string name="data_saved">Data is successfully saved</string>
-    <string name="no_data_exist">The article has not been saved</string>
+    <string name="save">Сохранить</string>
+    <string name="news_search_hint">Введите название новостей</string>
+    <string name="no_news_found_toast">Данные не найдены, проверьте заголовок новостей\n</string>
+    <string name="Save">Сохранить</string>
+    <string name="data_deleted">Данные успешно удалены</string>
+    <string name="data_saved">Данные успешно сохранены</string>
+    <string name="no_data_exist">Статья не была сохранена</string>
 
 
 
@@ -74,8 +74,8 @@
 
     Merriam Webster Dictionary -->
 <string name="action_dictionary">Merriam Webster Dictionary</string>
-<string name="dictionary_about">Data provided by Merriam Webster Dictionary\n www.dictionaryapi.com  \n</string>
-<string name="dictionary_help">Dictinary help ... \n\n change as you need </string>
-<string name="avatar">avatar</string>
+<string name="dictionary_about">Данные предоставлены Merriam Webster Dictionary\n www.dictionaryapi.com  \n</string>
+<string name="dictionary_help">Dictinary помощь ... \n\n измените как вам нужно </string>
+<string name="avatar">аватар</string>
 
     </resources>
